@@ -56,6 +56,8 @@ jupyter notebook traffic_accident_analysis.ipynb
 
 The dataset is in `data/Traffic_Accident.csv`. Update the `read_csv` path in the first cell if you're not running it on Colab.
 
+> **Note:** The saved outputs in the notebook were produced on a copy of the dataset with extra duplicate rows and missing values added on purpose to practice cleaning (843 rows). The file in `data/` is the original Kaggle version (840 rows), so re-running the notebook gives slightly different numbers.
+
 ## Tech stack
 
 Python · pandas · Matplotlib · Seaborn · scikit-learn
