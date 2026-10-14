@@ -16,6 +16,8 @@ This project explores which **road, weather, driver and traffic conditions** are
 | Vehicle | Vehicle Type |
 | Targets | Accident Severity, **Accident (0/1)** |
 
+> **Note:** The saved outputs in the notebook were produced on a copy of the dataset with extra duplicate rows and missing values added on purpose to practice cleaning (843 rows). The file in `data/` is the original Kaggle version (840 rows), so re-running the notebook gives slightly different numbers than the ones shown below.
+
 ## Workflow
 
 1. **Cleaning:** Removed duplicate rows and missing values. Removed outliers with the IQR method.
@@ -46,17 +48,6 @@ The baseline Random Forest reached **69% accuracy**. It recognizes the majority 
 - Handle the class imbalance with class weights or SMOTE.
 - Optimize for recall on the accident class.
 - Tune the model's hyperparameters.
-
-## Running it
-
-```bash
-pip install -r requirements.txt
-jupyter notebook traffic_accident_analysis.ipynb
-```
-
-The dataset is in `data/Traffic_Accident.csv`. Update the `read_csv` path in the first cell if you're not running it on Colab.
-
-> **Note:** The saved outputs in the notebook were produced on a copy of the dataset with extra duplicate rows and missing values added on purpose to practice cleaning (843 rows). The file in `data/` is the original Kaggle version (840 rows), so re-running the notebook gives slightly different numbers.
 
 ## Tech stack
 
